@@ -1,0 +1,63 @@
+/*B级难度char[]*/
+
+/*const char[]*/
+const char const_char_arr1_1[1] = {'B'};
+const char const_char_arr1_2[2] = {'c', 'C'}, const_char_arr1_3[2] = {'d', 'D'};
+const char const_string_char[10] = "abcde";
+
+/*char[]*/
+char e_char[2];
+char f_char[2] = {'x', 'y'};
+char g_char[2], h_char[2] = {'x', 'a'}, j_char[2];
+char string_char[10] = "abcde";
+
+/*func*/
+void func1(char a[]) {
+    return;
+}
+
+char func2(char a[]) {
+    return a[0];
+}
+
+char func3(char a[]) {
+    return 'x';
+}
+
+char func4(char a[], char b) {
+    return a[0];
+}
+
+char func5(char a[], char b, char c[]) {
+    return 'y';
+}
+
+int main() {
+    char arr1[1] = {'x'};
+
+    /*func*/
+    func1(arr1);
+    func2(arr1);
+
+    func3(arr1);
+    func4(arr1, 'y');
+    func5(arr1, 'x', arr1);
+
+    char a[1];
+    a[0] = 'y';
+
+    int z = 1;
+
+    printf("22371032\n");
+    printf("%d\n", z);
+    printf("%d\n", z);
+    printf("%d\n", z);
+    printf("%d\n", z);
+    printf("%d\n", z);
+    printf("%d\n", z);
+    printf("%d\n", z);
+    printf("%d\n", z);
+    printf("%d\n", z);
+
+    return 0;
+}

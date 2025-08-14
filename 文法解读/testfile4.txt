@@ -1,0 +1,190 @@
+/*C级难度*/
+
+/*const int*/
+const int const_int_1 = 0;
+const int const_int_2 = 1, cocnst_int_3 = 2;
+
+/*int*/
+int a_int;
+int b_int = 10;
+int c_int = 2, d_int = 5;
+
+/*const char*/
+const char const_char_1 = 'a';
+const char const_char_2 = 'z', const_char_3 = 'A';
+
+/*char*/
+char a_char;
+char b_char = 'x';
+char c_char = 'y', d_char = 'z';
+
+/*func*/
+void func1() {
+    char ch;
+    return;
+}
+
+int func2(int a) {
+    return a;
+}
+
+char func3(char ch) {
+    return ch;
+}
+
+int func4(int a, int b, int c) {
+    return a + b + c;
+}
+
+char func5(char ch1, char ch2, char ch3) {
+    return ch1;
+}
+
+int main() {
+    /*getchar getint*/
+    int a;
+    char ch;
+    a = getint();
+    a = getchar();
+
+    /*Block*/
+    {
+        /*if*/
+        int b;
+        b = 5;
+        if (b == 5)
+        {
+            b = 5;
+        }
+        if (b > 5)
+        {
+            b = 4;
+        } else {
+            b = 5;
+        }
+        if (b < 5)
+        {
+            b = 6;
+        } else {
+            b = 5;
+        }
+        if (b >= 5)
+        {
+            b = 5;
+        }
+        if (b <= 5)
+        {
+            b = 6;
+        }
+        if (b != 5)
+        {
+            b = 7;
+        }  
+        int c;
+        c = 0;
+        if (!c)
+        {
+            c = 1;
+        }
+        
+    }
+
+    /*for*/
+    int c;
+    c = 0;
+    for ( c = 0; c < 3; c = c + 1)
+    {
+        c = c + 1;
+    }
+    c = 0;
+    for (; c < 3; c = c + 1) {
+
+    }
+    for ( c = 0; c < 3;)
+    {
+        if (c == 2)
+        {
+            c = c + 1;
+            continue;
+        }
+        c = c + 1;
+    }
+    for ( c = 0;;c = c + 1)
+    {
+        if (c == 2)
+        {
+            break;
+        }
+        
+    }
+    for ( c = 0;;)
+    {
+        break;
+    }
+    c = 0;
+    for (; c < 3;)
+    {
+        c = c + 2;
+    }
+    c = 0;
+    for (;; c = c + 1)
+    {
+        if (c == 2)
+        {
+            break;
+        }
+        
+    }
+    c = 0;
+    for (;;)
+    {
+        c = c + 1;
+        if (c == 2)
+        {
+            break;
+        }
+        
+    }
+
+    /*+-...*/
+    int d;
+    d = 10;
+    d = -10;
+    d = +10;
+    d = 100 - 90;
+    d = d + (d - 10);
+    d = d * 10 / 10 - 3;
+    d = (d % 3 + 4);
+    
+    /*func*/
+    func1();
+    int e, f, g;
+    e = 0;
+    f = 1;
+    g = 2;
+    func2(e);
+    func4(1, f, g);
+    func4(1, 0, 1);
+    func4(e, f, 1);
+    char ch1, ch2, ch3;
+    ch1 = 'x';
+    ch2 = 'y';
+    ch3 = '$';
+    func3(ch1);
+    func5('x', ch2, ch3);
+    func5(ch1, 'y', ch3);
+
+    int z = 1;
+
+    printf("22371032\n");
+    printf("%d\n", z);
+    printf("%d\n", z);
+    printf("%d\n", z);
+    printf("%d\n", z);
+    printf("%d\n", z);
+    printf("%d\n", z);
+    printf("%d\n", z);
+    printf("%d\n", z);
+    printf("%d\n", z);
+    return 0;    
+}
